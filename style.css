@@ -1,358 +1,105 @@
 * {
   margin: 0px;
   padding: 0px;
+  box-sizing: border-box;
 }
 
 :root {
   /* color: hsla(171, 99%, 32%, 0); */
-  --hue: 177;
+  --hue: 122;
   --cor0: hsl(var(--hue) 49% 85%);
   --cor1: hsl(var(--hue) 61% 70%);
   --cor2: hsl(var(--hue) 69% 55%);
   --cor3: hsl(var(--hue) 56% 42%);
   --cor4: hsl(var(--hue) 56% 23%);
   --cor5: hsl(var(--hue) 82% 13%);
+  --cor6: hsl(var(--hue) 92% 3%);
 
   --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
   --fonte-destaque: "Bebas Neue", cursive;
   --fonte-android: "Android", cursive;
 }
 
-html {
-  font-family: var(--fonte-padrao);
-}
 
 body {
-  scroll-behavior: smooth;
-  overflow-x: hidden;
-  font-size: 62.5%;
-
+  font-size: 67.5%;
+  font-family: var(--fonte-padrao);
+  text-decoration: none;
+  background: var(--cor6);
+  color: var(--cor0);
 }
 
-main {
-  background: var(--cor4);
+nav {
+  display: flex;
+  width: 100%;
+  background-color: var(--cor3);
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 2rem;
 }
 
 .navegacao {
-  background-color: var(--cor5);
-  padding: .5rem;
+  width: 100%;
   display: flex;
   align-items: center;
-  justify-content: center;
-  font-size: 2rem;
+  flex-direction: row;
+  height: 5rem;
+  padding: 0 3rem;
+  justify-content: space-between;
 }
 
-.navegacao>a {
-  color: #ffffff;
-  padding: 0.625rem;
+.navegacao a {
   text-decoration: none;
-  font-weight: bold;
-  border-radius: 0.3125rem;
-  padding-bottom: 1.875rem;
+  font-size: 1.5rem;
+  color: var(--cor0);
 }
 
-.navegacao>a:hover {
-  background-color: var(--cor2);
-  color: var(--cor5);
-  padding: 5px;
-}
-
-/* SESSAO APRESENTACAO */
-section#apresentacao {
-  background-image: linear-gradient(to bottom, var(--cor2), var(--cor4));
+.content-home {
   display: flex;
+  flex-direction: column;
+  width: 100%;
+  position: relative;
+  right: 2.5rem;
+
   align-items: center;
   justify-content: center;
-  position: relative;
 
 }
 
-.fotoInicio {
-  display: flex;
-  clip-path: circle();
-  margin: 1rem;
+.my-photo {
+  border: .5rem solid white;
+  border-radius: 50%;
+  width: 25rem;
   align-items: center;
-  height: 30rem;
-}
-
-.inicioPage {
-  border-radius: 9px;
-  font-family: var(--fonte-destaque);
-  color: var(--cor5);
-  text-align: right;
-  margin: 20px;
-  padding: 30px;
+  position: absolute;
+  left: 65px;
+  top: 65px;
+  justify-content: center;
   display: flex;
-  /* width: 500px;
-  height: 100%; */
-}
-
-.texto>p>strong {
-  color: var(--cor1);
-  font-weight: bold;
 }
 
 .texto {
-  color: var(--cor5);
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   text-align: left;
-  flex-direction: column;
-  align-items: center;
-  margin: 2.5rem;
-  height: 541px;
-}
-
-.texto>h2 {
-  display: flex;
-  align-items: center;
-  font-family: var(--fonte-destaque);
-  font-size: 3rem;
-}
-
-.texto>p {
-  text-align: left;
-
-  font-family: var(--fonte-padrao);
-  font-size: 1.5rem;
-}
-
-/* SESSAO SOBRE MIM */
-section#sobreMim {
-  /* margin: 20px; */
-  background-color: var(--cor4);
-  align-content: flex-start;
-}
-
-.textoSobre {
-  color: var(--cor2);
-  display: flex;
-  text-align: left;
-  flex-direction: column;
-  align-items: center;
-}
-
-.textoSobre>h2 {
-  display: flex;
-  align-items: center;
-  font-family: var(--fonte-destaque);
-  font-size: 3rem;
-  justify-content: center;
-}
-
-.textoSobre>p {
-  font-family: var(--fonte-padrao);
-  padding: 1.5rem;
-  font-size: 1.5rem;
-}
-
-.textoSobre>p>a {
-  background-color: var(--cor5);
-  padding: 0.1rem;
-  color: var(--cor2);
-}
-
-.imagens {
-  display: flex;
-  justify-content: space-around;
-  flex-direction: row;
-}
-
-.imagens>img {
-  display: inline;
-  margin: 1rem;
-  gap: 0.5rem;
-  width: 24rem;
-  height: 5rem;
-  justify-content: space-around;
-  flex-direction: row;
-}
-
-p>a.ancList {
-  text-decoration: none;
-  font-weight: bolder;
-  font-family: var(--fonte-android);
-  color: var(--cor0);
-  background-color: var(--cor4);
-  border-radius: 8px;
-  padding: 0.1rem;
-  gap: 0.3rem;
-  font-size: 1.5rem;
-
-}
-
-a.ancList {
-  text-decoration: none;
-  font-weight: bolder;
-  font-family: var(--fonte-android);
-  color: var(--cor1);
-  background-color: var(--cor3);
-  border-radius: 8rem;
-  font-size: 1rem;
-
-
-  padding: 0.5rem;
-}
-
-ul {
-  display: flex;
-  justify-content: space-between;
-  margin: 10px;
-  text-decoration: none;
-}
-
-li {
-  display: flex;
-  text-decoration: none;
-  padding: 1rem;
-}
-
-/* SESSAO INTERATIVIDADE */
-section#interatividade {
-  padding: 10px;
-  background-color: var(--cor4);
-  /* background-image: radial-gradient(to bottom, var(--cor5), var(--cor0)); */
-}
-
-.textoInteratividade h3 {
-  background-color: var(--cor1);
-  color: var(--cor5);
-  font-family: var(--fonte-android);
-  padding: 10px;
-  width: 100%;
-  margin: -10px -10px 0px -10px;
-  border-radius: 10px 10px 0px 0px;
-}
-
-.textoInteratividade p {
-  font-family: var(--fonte-padrao);
-  padding: 1.5rem;
-  font-size: 1.5rem;
-  /* background-color: var(--cor5); */
-  padding: 0.1rem;
-  color: var(--cor2);
-}
-
-div.video {
-  background-color: var(--cor5);
-  padding: 20px;
-  margin: 0px -20px 30px -20px;
-  padding-bottom: 59%;
   position: relative;
-}
-
-div.video>iframe {
-  position: absolute;
-  top: 5%;
-  left: 5%;
-  width: 90%;
-  height: 90%;
-}
-
-/* SESSAO FOOTER */
-.container {
-  padding: 10px;
-  display: flex;
-  justify-content: center;
-  background-color: var(--cor3);
+  left: 16rem;
+  top: 6rem;
   align-items: center;
 }
 
-.textoFooter {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-family: var(--fonte-padrao);
-  color: var(--cor1);
-  font-size: 2rem;
-
+.col-1 {
+  margin: 5px;
+  max-width: 25rem;
+  font-size: 1rem;
 }
 
-.textoFooter p {
-  margin: 0px;
+.col-2 {
+  margin: 0 5px;
+  font-size: 1rem;
+  max-width: 25rem;
 
 }
-
-.textoFooter a {
-  color: var(--cor1);
-  text-decoration: none;
-
-}
-
-.textoFooter a:hover {
-  /* text-decoration: underline; */
-  color: var(--cor5);
-  font-size: 2rem;
-  border-radius: .8rem;
-  /* padding: 5px; */
-  background-color: var(--cor0);
-}
-
-/* footer > .container > .textoFooter > p {
-  
-  color: #ffffff;
-  text-align: center;
-  padding: 5rem;
-  height: 3rem;
-
-}
-footer > .container > .textoFooter > a {
-  color: #ffffff;
-  font-weight: bolder;
-  text-decoration: none;
-}
- */
-/*
-main a:hover {
-  text-decoration: underline;
-  background-color: var(--cor1);
-  border-radius: 7px;
-}
-main img {
-  width: 100%;
-}
-main img.pequena {
-  max-width: 350px;
-  display: block;
-  margin: auto;
-} */
-/* section {
-  background-color: var(--cor0);
-  padding: 10px;
-  border-radius: 10px;
-  margin: 10px 10px;
-  box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.295);
-}
-
-section > ul {
-  list-style-type: "\2714\00A0\00A0";
-  list-style-position: inside;
-} */
-/* section {
-  background-color: var(--cor4);
-  color: #ffffff;
-  padding: 10px;
-  margin: 10px 10px 0px 10px;
-  border-radius: 10px 10px 0px 0px;
-} 
-*/
-/* SESSAO ARTIGO */
-/* main {
-  min-width: 300px;
-  max-width: 1000px;
-  margin: auto;
-  margin-bottom: 30px;
-  padding: 20px;
-  background-color: #ffffff;
-} */
-/* @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"); */
-
-/* @font-face {
-  font-family: "Android";
-  src: url(./fontes/idroid.otf) format("opentype");
-} */
-/* main h1 {
-  color: var(--cor5);
-  font-family: var(--fonte-android);
-  padding-top: 50px;
-} */
