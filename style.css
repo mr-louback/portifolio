@@ -6,7 +6,7 @@
 
 :root {
   /* color: hsla(171, 99%, 32%, 0); */
-  --hue: 122;
+  --hue: 200;
   --cor0: hsl(var(--hue) 49% 85%);
   --cor1: hsl(var(--hue) 61% 70%);
   --cor2: hsl(var(--hue) 69% 55%);
@@ -35,7 +35,7 @@ nav {
   background-color: var(--cor3);
 }
 
-.container {
+div.container {
   width: 100%;
   margin: 0 auto;
   padding: 0 2rem;
@@ -59,11 +59,8 @@ nav {
 
 .content-home {
   display: flex;
-  flex-direction: column;
   width: 100%;
-  position: relative;
-  right: 2.5rem;
-
+  margin-bottom: 2rem;
   align-items: center;
   justify-content: center;
 
@@ -71,13 +68,9 @@ nav {
 
 .my-photo {
   border: .5rem solid white;
-  border-radius: 50%;
-  width: 25rem;
-  align-items: center;
-  position: absolute;
-  left: 65px;
-  top: 65px;
+  border-radius: 1rem;
   justify-content: center;
+  width: 100%;
   display: flex;
 }
 
@@ -85,9 +78,7 @@ nav {
   display: grid;
   grid-template-columns: 1fr 1fr;
   text-align: left;
-  position: relative;
-  left: 16rem;
-  top: 6rem;
+  padding: 2rem;
   align-items: center;
 }
 
@@ -101,5 +92,79 @@ nav {
   margin: 0 5px;
   font-size: 1rem;
   max-width: 25rem;
+
+}
+
+.interatividade-page {
+
+  font-size: 1rem;
+  margin-bottom: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.interatividade-page h2 {
+  text-align: center;
+  width: 100%;
+}
+
+.interatividade-cards {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  /* display: inline-flex; */
+}
+
+.card {
+  border-radius: 10px 10px 0 0;
+  padding: 10px;
+  width: 325px;
+  margin: 10px;
+  height: 250px;
+  background: var(--cor1);
+}
+
+.card h3 {
+  color: var(--cor6);
+
+}
+
+.card p {
+  background: var(--cor6);
+  border-radius: 8px;
+  /* height: 15rem; */
+  /* width: 100%; */
+  padding: 10px;
+  overflow-y: hidden;
+}
+
+.card a {
+  display: inline-flex;
+  margin: 0.5rem auto;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  height: 1.5rem;
+  text-align: center;
+  text-decoration: none;
+  background: var(--cor3);
+  color: var(--cor0);
+  border-radius: 20px;
+
+}
+
+.interatividade-video {
+  display: flex;
+  border: 1px solid var(--cor0);
+  border-radius: 8px;
+
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.interatividade-video iframe {
+  border-radius: 8px;
+
 
 }
