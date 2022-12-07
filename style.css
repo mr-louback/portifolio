@@ -2,6 +2,9 @@
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  text-transform: none;
 }
 
 :root {
@@ -45,6 +48,26 @@ body {
   scroll-snap-type: x mandatory;
 }
 
+::-webkit-scrollbar {
+  width: 10px;
+  height: .5rem;
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 3px grey; 
+  border-radius: 10px;
+}
+ 
+::-webkit-scrollbar-thumb {
+  background: var(--cor5);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--cor4); 
+}
+
+
 .nav-container {
   position: absolute;
   width: 100vw;
@@ -63,7 +86,6 @@ body {
   align-items: center;
   height: 3rem;
   width: 100%;
-  background-color: var(--cor3);
   padding: 0 2rem;
 
   justify-content: space-evenly;
@@ -83,7 +105,9 @@ body {
 .menu-container a:hover {
   list-style: none;
   text-decoration: none;
+  border-radius: 0.8rem;
   background-color: #000;
+  height: 90%;
 }
 
 .content-home {
@@ -257,4 +281,40 @@ iframe {
   align-items: center;
   justify-content: center;
 
+}
+
+.content-article {
+  width: 100vw;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  flex-direction: column;
+  height: 100%;
+  padding: 2rem;
+  justify-content: center;
+  align-items: center;
+
+  color: var(--cor1);
+  text-align: left;
+  list-style: none;
+  text-decoration: none;
+  font-size: 1rem;
+
+
+  background-image: url("./imagens/thunder.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+}
+
+.content-images a {}
+
+.content-footer {
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  display: flex;
+  font-size: 2rem;
+  flex-direction: column;
 }
