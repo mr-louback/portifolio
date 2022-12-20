@@ -1,15 +1,15 @@
 * {
-  margin: 0px;
-  padding: 0px;
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
-  list-style: none;
+  /* list-style: none;
   text-decoration: none;
-  text-transform: none;
+  text-transform: none; */
 }
 
 :root {
   /* color: hsla(171, 99%, 32%, 0); */
-  --hue: 200;
+  --hue: 270;
   --cor0: hsl(var(--hue) 49% 85%);
   --cor1: hsl(var(--hue) 61% 70%);
   --cor2: hsl(var(--hue) 69% 55%);
@@ -24,7 +24,7 @@
 }
 
 body {
-  font-size: 67.5%;
+  font-size: 62.5%;
   background-size: cover;
   font-family: var(--fonte-padrao);
   text-decoration: none;
@@ -33,7 +33,6 @@ body {
 
   height: 100vh;
   overflow-y: hidden;
-
 
 }
 
@@ -49,22 +48,22 @@ body {
 }
 
 ::-webkit-scrollbar {
-  width: 10px;
+  width: 1rem;
   height: .5rem;
 }
 
 ::-webkit-scrollbar-track {
-  box-shadow: inset 0 0 3px grey; 
-  border-radius: 10px;
+  box-shadow: inset 0 0 0.3rem grey;
+  border-radius: 1rem;
 }
- 
+
 ::-webkit-scrollbar-thumb {
   background: var(--cor5);
-  border-radius: 10px;
+  border-radius: 1rem;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: var(--cor4); 
+  background: var(--cor4);
 }
 
 
@@ -178,14 +177,14 @@ body {
 }
 
 .col-1 {
-  margin: 5px;
+  margin: 0.5rem;
   max-width: 25rem;
   margin: .5rem;
   font-size: 1rem;
 }
 
 .col-2 {
-  margin: 0 5px;
+  margin: 0 0.5rem;
   font-size: 1rem;
   max-width: 25rem;
 
@@ -204,7 +203,7 @@ body {
 
 .content-main h2 {
   text-align: center;
-  padding: 5px;
+  padding: 0.5rem;
 
 }
 
@@ -212,17 +211,17 @@ body {
   display: flex;
   flex-direction: column;
   position: relative;
-  height: 22px;
-  margin: 0 62px;
+  height: 2.2rem;
+  margin: 0 6.2rem;
 }
 
 .card {
-  margin-top: 3px;
+  margin-top: 1rem;
 
-  border-radius: 10px 10px 0 0;
-  padding: 10px;
-  width: 325px;
-  height: 270px;
+  border-radius: 1rem ;
+  padding: 1rem;
+  width: 29vw;
+  height: 50vh;
   background: var(--cor1);
 }
 
@@ -233,9 +232,9 @@ body {
 
 .card p {
   background: var(--cor6);
-  border-radius: 8px;
+  border-radius: 0.8rem;
 
-  padding: 10px;
+  padding: 1rem;
   overflow-y: hidden;
 }
 
@@ -250,7 +249,7 @@ body {
   text-decoration: none;
   background: var(--cor3);
   color: var(--cor0);
-  border-radius: 20px;
+  border-radius: 2rem;
 
 }
 
@@ -260,10 +259,10 @@ body {
   align-items: center;
   justify-content: center;
   width: 100%;
-  border-radius: 8px;
+  border-radius: 0.8rem;
   margin: 7rem;
-  max-width: 560px;
-  height: 65px;
+  max-width: 56rem;
+  height: 6.5rem;
 
   background-image: url("./imagens/learn.jpg");
   background-attachment: local;
@@ -274,7 +273,7 @@ body {
 }
 
 iframe {
-  border-radius: 8px;
+  border-radius: 0.8rem;
   position: absolute;
   bottom: 7rem;
   display: flex;
@@ -293,10 +292,9 @@ iframe {
   justify-content: center;
   align-items: center;
 
-  color: var(--cor1);
+  color: var(--cor2);
   text-align: left;
-  list-style: none;
-  text-decoration: none;
+
   font-size: 1rem;
 
 
@@ -307,7 +305,15 @@ iframe {
   background-size: cover;
 }
 
-.content-images a {}
+article ul {
+  list-style: none;
+}
+
+.content-item a,
+.content-imagens li a {
+  text-decoration: none;
+  color: var(--cor0);
+}
 
 .content-footer {
   height: 100%;
@@ -315,6 +321,11 @@ iframe {
   align-items: center;
   width: 100vw;
   display: flex;
+  color: var(--cor2);
   font-size: 2rem;
   flex-direction: column;
+}
+.content-footer a{
+  color: var(--cor0);
+
 }
