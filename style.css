@@ -44,9 +44,15 @@ body {
 
   overflow-y: hidden;
   overflow-x: scroll;
+  scroll-behavior: smooth;
+
   scroll-snap-type: x mandatory;
 }
+.content-item {
+  scroll-snap-align: x;
+  scroll-behavior: smooth;
 
+}
 ::-webkit-scrollbar {
   width: 1rem;
   height: .5rem;
@@ -74,10 +80,7 @@ body {
 
 }
 
-.content-item {
-  scroll-snap-align: x;
 
-}
 
 .menu-container {
   display: flex;
