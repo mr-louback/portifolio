@@ -6,6 +6,7 @@
   text-decoration: none;
   text-transform: none; */
 }
+
 ::-webkit-scrollbar {
   width: 1rem;
   height: .5rem;
@@ -24,6 +25,7 @@
 ::-webkit-scrollbar-thumb:hover {
   background: var(--cor4);
 }
+
 :root {
   /* color: hsla(171, 99%, 32%, 0); */
   --hue: 255;
@@ -66,8 +68,9 @@ body {
 
   scroll-snap-type: x proximity;
 }
+
 .content-item {
-  scroll-snap-align: x ;
+  scroll-snap-align: x;
   scroll-behavior: smooth;
 
 }
@@ -77,7 +80,7 @@ body {
 .nav-container {
   width: 100%;
   display: flex;
-position: absolute;
+  position: absolute;
 }
 
 
@@ -221,7 +224,7 @@ position: absolute;
 .card {
   margin-top: 1rem;
 
-  border-radius: 1rem ;
+  border-radius: 1rem;
   padding: 1rem;
   width: 29vw;
   height: 50vh;
@@ -328,7 +331,8 @@ article ul {
   font-size: 2rem;
   flex-direction: column;
 }
-.content-footer a{
+
+.content-footer a {
   color: var(--cor0);
 
 }
