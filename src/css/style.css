@@ -87,7 +87,7 @@ nav>a:hover {
   text-align: center;
 }
 
-/* Home */
+/* Home home*/
 .content-header {
   background-image: url("../img/bg-image-sky.jpg");
   background-repeat: no-repeat;
@@ -154,11 +154,7 @@ nav>a:hover {
   font-size: 1rem;
 }
 
-/* Main */
-
-
-
-/* Article */
+/* Article sobre mim*/
 
 .content-article {
   font-size: 1rem;
@@ -192,7 +188,7 @@ nav>a:hover {
   list-style: none;
 }
 
-/* Footer */
+/* Footer contato */
 
 .content-footer {
   display: flex;
