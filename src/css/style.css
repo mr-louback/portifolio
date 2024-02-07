@@ -2,9 +2,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  /* list-style: none;
-  text-decoration: none;
-  text-transform: none; */
 }
 
 ::-webkit-scrollbar {
@@ -165,7 +162,7 @@ nav>a:hover {
   background-attachment: fixed;
   color: var(--cor1);
   width: 100vw;
-  height: 100%;
+  height: 100vh;
   padding: 4rem;
 }
 
@@ -227,4 +224,78 @@ nav>a:hover {
 .button-footer:hover {
   padding: 2rem;
   background-color: var(--cor5);
+}
+
+@media only screen and (max-width: 767px) {
+  body {
+    font-size: 62.5%;
+  }
+
+  /* Menu */
+  nav {
+    padding: 0 ;
+  }
+
+  /* Home home*/
+  .content-header {
+    width: 100vw;
+    height: 100%;
+  }
+
+  .photo-header {
+    margin-top: 40px;
+  }
+
+  /* Article sobre mim*/
+  .content-article {
+    font-size: 1rem;
+    background-image: url("../img/bg-image-thunder.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    color: var(--cor1);
+    width: 100vw;
+    height: 100%;
+    padding: 4rem;
+  }
+
+  /* Footer contato */
+  .content-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    width: 100%;
+  }
+
+  .text-footer {
+    color: var(--cor0);
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .text-footer>a {
+    color: var(--cor0);
+    text-decoration: none;
+    font-size: 1rem;
+  }
+
+  .button-footer {
+    padding: 2rem;
+    background-color: var(--cor4);
+    margin-top: 1rem;
+    border: 2px solid var(--cor2);
+    border-radius: 20px;
+    cursor: pointer;
+  }
+
+  .button-footer:hover {
+    padding: 2rem;
+    background-color: var(--cor5);
+  }
 }
