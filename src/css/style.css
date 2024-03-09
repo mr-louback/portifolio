@@ -56,6 +56,42 @@ a {
   list-style: none;
 }
 
+.popup {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #000000d6;
+  padding: 20px;
+  border-top: 1px solid #ccc;
+  height: 100px;
+  text-align: center;
+}
+
+.popup a {
+  color: aqua;
+}
+
+.popup p {
+  color: var(--fonte-padrao);
+  font-size: 1rem;
+}
+
+.popup button {
+  background: none;
+  border: 1px solid #eee;
+  padding: .5rem;
+  margin-top: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.popup button:hover{
+  background-color: var(--cor0);
+  color: #000;
+  transition: all .3s;
+
+}
+
 /* Menu */
 
 nav {
@@ -228,8 +264,31 @@ nav>a:hover {
   background-color: var(--cor5);
 }
 
-@media only screen and (max-width: 767px) {
+.chat-button {
+  display: flex;
+  position: fixed;
+  padding: .9rem;
+  bottom: .5rem;
+  right: .5rem;
+  background-color: var(--cor1);
+  border-radius: 50%;
+  cursor: pointer;
+  border: none;
+  transition: all .3s;
+}
 
+.chat-button:hover {
+  background-color: var(--cor0);
+  transition: all .3s;
+}
+
+img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media only screen and (max-width: 767px) {
 
   /* Home home*/
   .content-header {
